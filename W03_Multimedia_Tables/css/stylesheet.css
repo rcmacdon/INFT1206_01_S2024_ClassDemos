@@ -1,0 +1,55 @@
+/*
+    Title: Week 3 Demo CSS File
+    Author: Clint MacDonald
+    Date: May 22, 2024
+    Purpose: Learning BASIC CSS programming
+*/
+
+/*
+SELECTORS and ATTRIBUTES
+
+3 Main SELECTORS
+1) Tag Selectors
+    based on HTML tags
+    apply to all versions of that tag in HTML
+2) Class Selectors
+    based on attributes named class
+    apply to all tags with a class attribute
+3) ID Selectors
+    based on attribute named ID as an identifier
+    apply to the ONE tag with the named ID attribute
+
+*/
+
+/* Tag Selector */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: bisque;
+}
+
+h1 {
+    color: #0B8261;
+    
+}
+
+h2 {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+/* Class Selectors */
+.Special {
+    color: gold;
+}
+
+/* ID Selector */
+#Warning {
+    color: red;
+}
+
+.ProfilePic {
+    width: 100px;
+    margin: 10px;
+    border: 1px solid black;
+    padding: 3px;
+}

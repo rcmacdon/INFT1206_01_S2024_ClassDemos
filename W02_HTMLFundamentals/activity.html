@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="EN">
+<head>
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    Basics of HTML
+What is HTML?
+HTML is the HyperText Markup Language. It allows us to write content in a document, just as we would in a file created by a word processor. Unlike a regular text file, it also includes structural and layout information about this content. We literally mark up the text of our document with extra information. HTML is a client-side technology, that runs in a browser. The WWW Consortium governs the standards of HTML such that multiple browsers can all read the same documents.
+
+HTML files can have many different file extensions, but the most common is .html. These files are essentially just text files in a specific format that we will cover below and during demonstrations in class.
+
+When talking about HTML's markup, we'll often refer to the following terms:
+
+tag: separated from regular content, tags are special text (names) wrapped in < and > characters, for example the image tag <img>. element: everything from an opening tag to the closing tag, for example: <h1>Chapter 1</h1>. Here an element is made up of an <h1> tag (i.e., opening Heading 1 tag), the text content Chapter 1, and a closing </h1> tag. These three together create an h1 element in the document.
+ 
+attribute: optional characteristics of an element defined using the style name or name="value", for example <p id="error-message" hidden>There was an error downloading the file</p>. Here two attributes are included with the p
+ 
+element: an id with value "error-message" (in quotes), and the hidden attribute (note: not all attributes need to have a value). Full list of common attributes.
+ 
+entity: special text that should not be confused for HTML markup. Entities begin with & and end with ;. For example, if you need to use the < character in your document, you need to use < instead, since < would be interpreted as part of an HTML tag.   is a single whitespace and & is the & symbol. Full list of named entities.
+ 
+HTML Document
+First HTML page ever created was built by Tim Berners-Lee on August 6, 1991.
+
+Since then, the web has gone through many versions:
+
+HTML - created in 1990 and standardized in 1997 as HTML 4
+xHTML - a rewrite of HTML using XML in 2000
+HTML5 - the current standard.
+Basic HTML5 Document
+Here's a basic HTML5 web page:
+
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Web Page</title>
+    </head>
+
+    <body>
+        <!-- This is a comment -->
+        <h1>Hello World!</h1>
+    </body>
+</html>
+Let's break this down and look at what's happening.
+
+<!doctype html> tells the browser what kind of document this is, and how to interpret/render it
+<html> the root element of our document: all other elements will be included with <html>...</html>.
+<head> provides various information about the document as opposed to providing its content. This is metadata that describes the document.
+<meta> an example of some piece of metadata, in this case defining the character set used in the document: utf-8
+<title> an example of a specific (named) metadata element: the document's title, shown in the browser's title bar. There are a number of specific named metadata elements like this.
+<body> the content of the document is contained within <body>...</body>.
+<!-- ... --> a comment, similar to using /* ... */ in C, C#, CSS, or JavaScript
+<h1> a heading element (there are headings 1 through 6), which is a title or sub-title in a document.
+HTML COMMENTS
+When the requirements for ALL the labs state to include HTML comments with your name, the filename, the date the file was created, and a description, the following is AN EXAMPLE of what you should include:
+
+<!--
+    Name: 		Clint MacDonald
+    File: 		index.html
+    Date: 		May 14, 2024
+    Description:	This file acts as the home page for my INFT1206 website
+-->
+Common HTML Tags
+There are dozens of HTML elements you'll learn and use, but the following is a good set to get you started.
+
+Metadata
+Information about the document vs. the document's content goes in various metadata elements:
+
+<link> - links from this document to external resources, such as CSS stylesheets
+<meta> - metadata that can't be included via other elements
+<title> - the document's title
+Content Sections
+These are organizational blocks within the document, helping give structure to the content and provide clues to browsers, screen readers, and other software about how to present the content:
+
+<header> - introductory material at the top of a document
+<nav> - content related to navigation (a menu, index, links, etc)
+<main> - the main content of the document. For example, a news article's paragraphs vs. ads, links, navigation buttons, etc.
+<h1>, <h2>, ..., <h6> - (sub) headers for different sections of content
+<footer> - end material (author, copyright, links)
+Text Content
+We organize content into "boxes," some of which have unique layout characteristics.
+
+<div> - a generic container we use to attach CSS styles to a particular area of content
+<ol> - an ordered list (1, 2, 3) of list items
+<ul> - an unordered list (bullets) of list items
+<li> - a list item in an <ul> or <ol>
+<p> - a paragraph
+<blockquote> - an extended quotation
+Inline Text
+We also use elements within larger text content to indicate that certain words or phrases are to be shown differently:
+
+<a> - an "anchor" element, which will produce a hyperlink, allowing users to click and navigate to some other document.
+<code> - formats the text as computer code vs. regular text.
+<em> - adds emphasis to the text (often in italics)
+<span> - another generic container, used to define CSS styles
+Multimedia
+In addition to text, HTML5 also defines a number of rich media elements:
+
+<img> - an element used to embed images in a document.
+<audio> - an element used to embed sound in a document.
+<video> - an element used to embed video in a document
+<canvas> - a graphical area (rectangle) used to draw with either 2D or 3D using JavaScript.
+Scripting
+We create dynamic web content and applications through the use of scripting:
+
+<script> - used to embed executable code in a document, typically JavaScript.
+HTML Entities (Speacial Characters)
+Certain characters are special to the browser or are not part of a standard keyboard setup, HTML therefore has special character codes
+
+© is &copy;
+¥ is &yen;
+& is &amp;
+< is &lt;
+£ is &pound;
+> is &gt;
+€ is &euro;
+For a more complete listing, check out: W3Schools HTML Entities
+
+HTML Validation
+The W3C (World Wide Web Consortium) is a non-profit, international community where Member organizations work together with the public to develop a universal set Web standards. https://www.w3.org/
+
+W3C's mandate is to "lead the Web to its full potential". They are responsible for filtering proposals and forwarding recommended technologies and standards to be implemented on the web. Notable w3c standards include: HTML, XHTML, CSS, SOAP, XML.
+
+Validation Tool: W3C has developed an online tool, free-to-use, that developers can provide the ability to validate the html of any page, or code, against the standards provided, as well as provide some recommendations around best practices regarding accessibility and compatibility.
+
+NOTE: HTML5 is still listed as experimental on this site, but for the level we will be at in this course, it should be fine.
+
+NOTE that ALL HTML created and submitted in this course MUST pass validation using the above tool or marks will be deducted!
+HTML Element Types: Block vs. Inline
+Visual HTML elements are categorized into one of two groups:
+
+Block-level elements: create a “block” of content in a page, with an empty line before and after them. Block elements fill the width of their parent element. Block elements can contain other block elements, inline elements, or text.
+
+Inline elements: creates “inline” content, which is part of the containing block. Inline elements can contain other inline elements or text.
+
+Consider the following HTML content:
+
+<body>
+    <p>The <em>cow</em> jumped over the <b>moon</b>.</p>
+</body>
+Here we have a <p> paragraph element. Because it is a block-level element, this paragraph will fill its container (in this case the <body> element). It will also have empty space added above and below it.
+
+Within this block, we also encounter a number of other inline elements. First, we have simple text. However, we also see the <em> and <b> elements being used. These will affect their content, but not create a new block; rather, they will continue to flow inline in their container (the <p> element).
+
+Empty Elements
+Many of the elements we've seen so far begin with an opening tag, and end with a closing tag: <body></body>. However, not all elements need to be closed. Some elements have no content, and therefore don't need to have a closing tag. We call these empty elements.
+
+An example is the <br> SVGFESpecularLightingElement break element. We use a <br> when we want to tell the browser to insert a newline (similar to using \n in C or Java or shift-enter in a Word Document):
+
+<p>Knock, Knock<br>Who's there?</p> Other examples of empty elements include <hr> (for a horizontal line), <meta> for including metadata in the <head>, and a dozen others.
+</body>
+    </html>

@@ -1,0 +1,179 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    color: white;
+    background-color: black;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+#MainContainer {
+    background-color: black;
+    background-image: url(images/bg.jpg);
+    background-repeat: no-repeat;
+    width: 500px;
+    margin: auto 0px auto 0px;
+}
+
+#ContentContainer {
+    background-color: white;
+    color: #333333;
+    margin: 20px;
+    padding: 10px;
+}
+
+.Title {
+    font-size: 1.5em;
+}
+.Center {
+    width: 100%;
+    display: block;
+    margin: auto;
+}
+
+a {
+    color: steelblue;
+}
+
+table {
+    border-spacing: 0;
+    border-collapse: collapse;
+    border: 1px solid #333;
+}
+td, th {
+    padding: 10px;
+    border: 1px solid #666;
+}
+
+table caption {
+    border: 1px solid #333;
+    background-color: #fffcde;
+    font-weight: bold;
+    padding: 5px;
+}
+tbody tr:nth-child(even) {
+    background: #333;
+}
+
+tbody tr:nth-child(odd) {
+    background: #111;
+}
+
+thead th {
+    background: steelblue;
+}
+
+code {
+    background: #ddd;
+    color: black;
+    display: inline-block;
+    padding: .2em .4em;
+    font-family: "SFMono-Regular",Consolas,"Liberation Mono",Menlo,Courier,monospace;
+    font-size: 0.8em;
+    border-radius: 7px;
+}
+h1 {
+    font-size: 2em;
+    width: 100%;
+    border-bottom: 1px white solid;
+    color: gold;
+}
+h2 {
+    font-size: 1.6em;
+    color: orange;
+}
+h3 {
+    font-size: 1.4em;
+}
+h4 { 
+    font-size: 1.2em;
+    color: steelblue;
+}
+h5 {
+    font-size: 1em;
+}
+
+.container {
+    width: 980px;
+    margin-right: auto;
+    margin-left: auto;
+    /*background-color: yellow;*/
+}
+
+    .container::before {
+        display: table;
+        content: ""
+    }
+
+    .container::after {
+        display: table;
+        clear: both;
+        content: ""
+    }
+
+.container-md {
+    max-width: 768px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.container-lg {
+    max-width: 1012px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.container-xl {
+    max-width: 1280px;
+    margin-right: auto;
+    margin-left: auto
+}
+
+.columns {
+    margin-right: -10px;
+    margin-left: -10px
+}
+
+    .columns::before {
+        display: table;
+        content: ""
+    }
+
+    .columns::after {
+        display: table;
+        clear: both;
+        content: ""
+    }
+
+.column {
+    float: left;
+    padding-right: 10px;
+    padding-left: 10px
+}
+
+pre {
+    background-color: #444;
+    display: inline-flex;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 1.25em;
+}
+
+.highlight {
+    color: #ffcc00;
+}
+
+.highlight2 {
+    color: red;
+}
+
+footer {
+    text-align: center;
+    color: #999;
+    margin-bottom: 50px;
+}
+
+.comment {
+    color: green;
+}
