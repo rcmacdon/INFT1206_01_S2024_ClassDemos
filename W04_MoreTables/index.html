@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<!--
+    Title:  Week 4 Demo
+    Author: Clint MacDonald
+    Date:   May 29, 2024
+    Purpose: Learning More Advanced Tables and Multimedia
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 4 Demo</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <table id="MainLayout" cellspacing="0" cellpadding="2">
+        <tr id="PageHeader">
+            <td colspan="2">
+                <img 
+                    srcset="
+                        TechProfBanner.png 1200w,
+                        TechProfBanner1000.png 950w,
+                        TechProfBanner600.png 500w,
+                        TechProfBanner240.png 100w"
+                    sizes="(max-width: 99px) 100px, 500px, 950px, 1200px"
+                    src="TechProfBanner.png" 
+                    alt="Tech Prof Banner">
+            </td>
+        </tr>
+        <tr>
+            <td id="Menu">Menu</td>
+            <td id="MainContent">
+                <h1>Main Heading</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus temporibus debitis iusto laborum tenetur ea animi obcaecati nulla, earum harum praesentium inventore suscipit nostrum eligendi similique vitae? Quo, soluta non?</p>
+
+                <h2>Grian at Minecraft</h2>
+
+
+                <iframe width="800" height="342" src="https://www.youtube.com/embed/EDep287Kvuo" title="Minecraft: GUESS THE BUILD: THEMED!" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+                <table border="1" cellspacing="0" cellpadding="5">
+                    <caption>Course Schedule</caption>
+                    <colgroup>
+                        <col>
+                        <col style="background-color: gray;">
+                        <col span="2">
+                        <col style="background-color: pink;">
+                    </colgroup>
+                    <tr>
+                        <td rowspan="7" style="writing-mode: vertical-rl;
+                        text-orientation:sideways-right;">Week</td>
+                        <td>1</td>
+                        <td>topic 1</td>
+                        <td>topic 2</td>
+                        <td>5%</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>topic 3</td>
+                        <td>topic 4</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Review</td>
+                        <td>Midterm Test</td>
+                        <td>25%</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4">Reading Week</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>Topic 5</td>
+                        <td>Topic 6</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>Topic 7</td>
+                        <td>Topic 8</td>
+                        <td>10%</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>Presentations</td>
+                        <td>Final Exam</td>
+                        <td>40%</td>
+                    </tr>
+
+                </table>
+
+
+
+            </td>
+        </tr>
+        <tr id="PageFooter">
+            <td colspan="2">
+                <p>&copy; Copyright Clint MacDonald 2024, All Rights Reserved</p>
+            </td>
+        </tr>
+    </table>
+
+
+
+</body>
+</html>
