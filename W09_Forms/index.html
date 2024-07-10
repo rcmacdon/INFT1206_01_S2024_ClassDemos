@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<!--
+    Title:  INFT1206-01 Week 9 Demo
+    Author: Clint MacDonald
+    Date:   July 10, 2024
+    Purpose: Intro to HTML Forms
+-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Forms</title>
+    <style>
+        label {
+            display: inline-block;
+            width: 100px;
+        }
+        .Question {
+            font-weight: bold;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <h1>Registration</h1>
+
+    <form action="./" method="get">
+        
+        <label for="txtFirstName">First Name:</label>
+        <input type="text" id="txtFirstName" name="txtFirstName" >
+        <br>
+        <label for="txtLastName">Last Name:</label>
+        <input type="text" id="txtLastName" name="txtLastName" >
+        <br>
+        <label for="dtDob">Date of Birth:</label>
+        <input type="date" id="dtDob" name="dtDob" >
+        <br>
+        <label for="txtRubberDuck">Password:</label>
+        <input type="password" id="txtRubberDuck" name="txtRubberDuck" >
+        <br>
+        <label for="txtCity">City:</label>
+        <input type="text" id="txtCity" name="txtCity" value="Whitby">
+        <br>
+        <label for="cboProv">Province:</label>
+        <select id="cboProv" name="cboProv">
+            <option value="AL">Alberta</option>
+            <option value="PQ">Quebec</option>
+            <option value="NS">Nova Scotia</option>
+            <option value="ON" selected>Ontario</option>
+        </select>
+
+        <br><br>
+        <span class="Question">What is your favourite colour?</span>
+        <br><input type="radio" id="colourRed" name="favColour">Red
+        <br><input type="radio" id="colourBluie" name="favColour">Blue
+        <br><input type="radio" id="colourYellow" name="favColour">Yellow
+        <br><input type="radio" id="colourGreen" name="favColour">Green
+
+        <br><br>
+        <span class="Question">What is your favourite class?</span>
+        <br><input type="radio" id="WebDev" name="favClass">Web Development
+        <br><input type="radio" id="IntroDBase" name="favClass">Intro to Database
+        <br><input type="radio" id="Comm" name="favClass">Communications
+        <br><input type="radio" id="Math" name="favClass">Math for IT Students
+
+
+
+
+        <br>
+        <br>
+        <label></label>
+        <input type="reset">
+        <input type="submit" id="btnSubmitID" name="btnSubmitName">
+
+    </form>
+
+</body>
+</html>
