@@ -1,0 +1,40 @@
+<!--
+    Title:  INFT1206-01 Week 12 Demo (HTML File)
+    Author: Clint MacDonald
+    Date:   July 31, 2024
+    Purpose: Forms Validation using JavaScript
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Week 12 Demo</title>
+    <link href="style.css" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+<body>
+    
+    <h1>Contact Us</h1>
+
+    <form name="contactForm" method="post" action="index.html" onsubmit="return validateForm();">
+
+        <label for="name">Name:</label>
+        <input type="text" name="name"><br>
+        <label for="email">Email:</label>
+        <input type="text" name="email"><br>
+        <label for="phone">Phone (##########):</label>
+        <input type="text" name="phone"><br>
+        <label for="desc">Description:</label>
+        <textarea name="desc" rows="4" cols="50"></textarea><br>
+        
+        <br><label></label>
+        <input type="submit" value="Submit">
+
+
+    </form>
+
+    
+</body>
+</html>

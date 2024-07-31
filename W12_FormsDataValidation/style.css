@@ -1,0 +1,15 @@
+/*
+    Title:  INFT1206-01 Week 12 Demo (CSS File)
+    Author: Clint MacDonald
+    Date:   July 31, 2024
+    Purpose: Forms Validation using JavaScript
+*/
+
+label {
+    display: inline-block;
+    width: 150px;
+}
+
+.errors {
+    color: red;
+}
